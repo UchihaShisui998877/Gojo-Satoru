@@ -1203,7 +1203,7 @@ case 'how':
 GojoMdNx.sendMessage(from, { text: `Question : ${q}\nAnswer : How ${ya}` }, { quoted: m })
 
 					break
-case 'gojo is my'
+case 'gojo is my':
 				if (!text) return replay (`use text ,Example : ${prefix + command} my wife `)
 					const at = ['yess my love i am your husband ', ' husband off umaima' ]
 					const um = at[Math.floor(Math.random() * at.length)]
