@@ -29,10 +29,10 @@ global.ig = 'https://github.com/DEVILL-MESCOTT'
 global.region = 'India, north India, delhi'
 global.sc = 'https://github.com/DEVILL-MASCOT/Gojo-Satoru'
 global.myweb = 'https://wa.me//+918130784851'
-global.packname = 'Gojo-Satoru'
-global.author = '🐦Star Boy @ayush'
+global.packname = 'umaima-ayush'
+global.author = 'umaima💕ayush'
 global.sessionName = 'session'
-global.prefa = ['','!','.','🐦','🐤','🗿']
+global.prefa = ['#','!','.']
 global.sp = '⭔'
 global.mess = {
     success: 'Done ✓',
