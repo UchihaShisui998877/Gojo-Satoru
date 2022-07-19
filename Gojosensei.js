@@ -1809,7 +1809,7 @@ break
              }
              break
             case 'sticker': case 's': case 'stickergif': case 'sgif': {
-                if (!isBotAdmins) return replay(`${mess.botAdmin}`)
+                if (!isCreator) return replay(`${mess.owner}`)
             if (!quoted) return replay(`Reply Video/Image With Caption ${prefix + command}`)
             reply(mess.wait)
                     if (/image/.test(mime)) {
