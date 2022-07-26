@@ -1203,13 +1203,11 @@ case 'how':
 GojoMdNx.sendMessage(from, { text: `Question : ${q}\nAnswer : How ${ya}` }, { quoted: m })
 
 					break
-case 'gojo is my':
-				if (!text) return replay (`use text ,Example : ${prefix + command} my wife `)
-					const at = [`yess my love i am your husband `, ` husband off umaima` ,`your husband babygirl` ,` your daddy baby`]
-					const um = at[Math.floor(Math.random() * at.length)]
-GojoMdNx.sendMessage(from, { text: `Question : ${q}\nAnswer : gojo is my  ${um}%` }, { quoted: m })
-					
-					break 
+	case 'my gojo is':
+				if (!text) return replay(`use text , Example : ${prefix + command} your husband `)
+					const at = [ `your daddy baby ` , `your husband` , `your master bitch `]
+					const umo = at[Math.floor(Math.random() * at {quoted : m)]
+GojoMdNx.sendMessage(from, { text: `Question : ${q}\nAnswer : How ${umo}` }, { quoted: m })
 					
 					
 case 'rate':
@@ -1726,7 +1724,7 @@ break
                 reply(`Successful Sending Broadcast To ${anu.length} Group(s)`)
             }
             break
-            case 'bc': case 'broadcast': case 'bcall': {
+            case 'broadcast': case 'bcall': {
                 if (!isCreator) return replay(`${mess.owner}`)
                 if (!text) return replay(`Where Is The Text?\n\nExample : ${prefix + command} Nexus`)
                 let anu = await store.chats.all().map(v => v.id)
@@ -1762,7 +1760,7 @@ break
             break
             case 'chatinfo': case 'infochat': {
                 if (!m.quoted) return reply(`Reply Message`)
-                let msg = await m.getQuotedObj()
+                let msg = await m.getQuotedObj( )
                 if (!m.quoted.isBaileys) return replay(`The Message Was Not Sent By A Bot!`)
                 let teks = ''
                 for (let i of msg.userReceipt) {
@@ -2695,7 +2693,7 @@ break
 		    db.data.users[m.sender].limit -= 1
                 } else if (type.toLowerCase() == 'ig') {
                     if (!id) return reply(`No Query username, Example : ${prefix + command} ig josephxeon13`)
-                    let { result: anu } = await fetchJson(api('zenz',`https://api-xcoders.xyz/api/stalk/ig?username=${id}&apikey=nMLptkNt9s `))
+                    let { result: anu } = await fetchJson(api('zenz',`https://popcat.xyz/instagram=${id}`))
                     if (anu.status == false) return reply(anu.result.message)
                     GojoMdNx.sendMedia(m.chat, anu.caption.profile_hd, '', `🐦 Full Name : ${anu.caption.full_name}\n🐦 User Name : ${anu.caption.user_name}\n🐦 ID ${anu.caption.user_id}\n🐦 Following : ${anu.caption.followers}\n🐦 Followers : ${anu.caption.following}\n🐦 Bussines : ${anu.caption.bussines}\n🐦 Professional : ${anu.caption.profesional}\n🐦 Verified : ${anu.caption.verified}\n🐦 Private : ${anu.caption.private}\n🐦 Bio : ${anu.caption.biography}\n🐦 Bio Url : ${anu.caption.bio_url}`, m)
 		    db.data.users[m.sender].limit -= 1
