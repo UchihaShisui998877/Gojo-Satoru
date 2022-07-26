@@ -1205,9 +1205,9 @@ GojoMdNx.sendMessage(from, { text: `Question : ${q}\nAnswer : How ${ya}` }, { qu
 					break
 case 'gojo is my':
 				if (!text) return replay (`use text ,Example : ${prefix + command} my wife `)
-					const at = ['yess my love i am your husband ', ' husband off umaima' ]
+					const at = [`yess my love i am your husband `, ` husband off umaima` ,`your husband babygirl` ,` your daddy baby`]
 					const um = at[Math.floor(Math.random() * at.length)]
-GojoMdNx.sendMessage(from, { text: `Rate : ${q}\nAnswer : *${um}%*` }, { quoted: m })
+GojoMdNx.sendMessage(from, { text: `Question : ${q}\nAnswer : gojo is my  ${um}%` }, { quoted: m })
 					
 					break 
 					
