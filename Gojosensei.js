@@ -1206,7 +1206,7 @@ GojoMdNx.sendMessage(from, { text: `Question : ${q}\nAnswer : How ${ya}` }, { qu
 	case 'my gojo is':
 				if (!text) return replay(`use text , Example : ${prefix + command} your husband `)
 					const at = [ `your daddy baby ` , `your husband` , `your master bitch `]
-					const umo = at[Math.floor(Math.random() * at {quoted : m)]
+					const umo = at[Math.floor(Math.random() * at.length)]
 GojoMdNx.sendMessage(from, { text: `Question : ${q}\nAnswer : How ${umo}` }, { quoted: m })
 					
 					
