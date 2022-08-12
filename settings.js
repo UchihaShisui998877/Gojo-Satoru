@@ -20,7 +20,7 @@ global.APIKeys = {
 
 //customize settings\\
 global.owner = ['918130784851', '919987052500' ]
-global.premium = ['918130784851','919987052500' ]
+global.premium = ['919987052500' ]
 global.ownernomer = '918130784851','919987052500'
 global.ownername = '🐦Star Boy @ayush'
 global.botname = 'Gojo-Satoru'
@@ -29,8 +29,8 @@ global.ig = 'https://github.com/DEVILL-MESCOTT'
 global.region = 'India, north India, delhi'
 global.sc = 'https://github.com/DEVILL-MASCOT/Gojo-Satoru'
 global.myweb = 'https://wa.me//+918130784851'
-global.packname = 'ua❄️ua'
-global.author = 'ua💕ua'
+global.packname = 'ua'
+global.author = 'ua'
 global.sessionName = 'session'
 global.prefa = ['#','!','.']
 global.sp = '⭔'
