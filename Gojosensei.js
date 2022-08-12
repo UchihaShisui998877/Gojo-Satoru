@@ -1321,7 +1321,7 @@ case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh':
 		if (!m.isGroup) return replay(`${mess.group}`)
                 if (!isBotAdmins) return replay(`${mess.botAdmin}`)
                 if (!isAdmins) return replay(`${mess.admin}`)
-		let users = m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
+		let users = m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')
 		await GojoMdNx.groupParticipantsUpdate(m.chat, [users], 'add').then((res) => reply(jsonformat(res))).catch((err) => reply(jsonformat(err)))
 	}
 	break
