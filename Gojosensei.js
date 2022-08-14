@@ -1175,40 +1175,6 @@ Cieeee, What's Going On❤️💖👀`
                     await GojoMdNx.sendButtonText(m.chat, buttons, jawab, GojoMdNx.user.name, m, {mentions: menst})
             }
             break
-            case 'is':
-				if (!text) return replay(`Use Text, Example : ${prefix + command} he married `)
-					const apa = [`Yes`, `No`, `It Could Be`, `Thats right`]
-					const kah = apa[Math.floor(Math.random() * apa.length)]
-GojoMdNx.sendMessage(from, { text: `Question : Is ${q}\nAnswer : ${kah}` }, { quoted: m })
-
-					break
-					            case 'what':
-				if (!text) return replay(`Use Text, Example : ${prefix + command} he married `)
-					const lel = [`Ask Your Gf`, `I Dont Know`, `I Don't Know, Ask Your Father`]
-					const kahk = lel[Math.floor(Math.random() * lel.length)]
-GojoMdNx.sendMessage(from, { text: `Question : What ${q}\nAnswer : ${kahk}` }, { quoted: m })
-
-					break
-case 'can':
-				if (!text) return replay(`Use Text, Example : ${prefix + command} you fuck her lol `)
-					const bisa = [`Can`,`Can't`,`Cannot`,`Of Course You Can!!!`]
-					const ga = bisa[Math.floor(Math.random() * bisa.length)]
-GojoMdNx.sendMessage(from, { text: `Question : Can ${q}\nAnswer : ${ga}` }, { quoted: m })
-
-					break
-case 'how':
-				if (!text) return replay(`Use Text, Example : ${prefix + command} is my face`)
-					const gimana = [`It's Okay`, `It's Difficult Bro`, `Sorry Bot Can't Answer`, `Try Searching On Google`,`Holy Cow! Really???`,`Dizzy Ah`,`Ohhh I See:(`,`The Patient, Boss:(`,`How Are You?`]
-					const ya = gimana[Math.floor(Math.random() * gimana.length)]
-GojoMdNx.sendMessage(from, { text: `Question : ${q}\nAnswer : How ${ya}` }, { quoted: m })
-
-					break
-	case 'my gojo is':
-				if (!text) return replay(`use text , Example : ${prefix + command} your husband `)
-					const at = [ `your daddy baby ` , `your husband` , `your master bitch `]
-					const umo = at[Math.floor(Math.random() * at.length)]
-GojoMdNx.sendMessage(from, { text: `Question : ${q}\nAnswer : How ${umo}` }, { quoted: m })
-					
 					
 case 'rate':
 				if (!text) return replay(`Use Text, Example : ${prefix + command} My Dp`)
@@ -1253,12 +1219,6 @@ GojoMdNx.sendMessage(from, { text: `*${command}*\n\nName : ${q}\nAnswer : *${san
 					GojoMdNx.sendMessage(from, { text: `Character Check : ${q}\nAnswer : *${taky}*` }, { quoted: m })
 				     break
                     
-case 'when':
-				if (!text) return replay(`Use Text, Example : ${prefix + command} will i get married `)
-					const kapan = ['5 More Days', '10 More Days', '15 More Days','20 More Days', '25 More Days','30 More Days','35 More Days','40 More Days','45 More Days','50 More Days','55 More Days','60 More Days','65 More Days','70 More Days','75 More Days','80 More Days','85 More Days','90 More Days','100 More Days','5 Months More', '10 Months More', '15 Months More','20 Months More', '25 Months More','30 Months More','35 Months More','40 Months More','45 Months More','50 Months More','55 Months More','60 Months More','65 Months More','70 Months More','75 Months More','80 Months More','85 Months More','90 Months More','100 Months More','1 More Year','2 More Years','3 More Years','4 More Years','5 More Years','Tomorrow','The Day After Tomorrow',`After This Command, You Too ${q}`]
-					const kapankah = kapan[Math.floor(Math.random() * kapan.length)]
-GojoMdNx.sendMessage(from, { text: `Question : ${q}\nAnswer : *${kapankah}*` }, { quoted: m })
-					break
 case 'wangy':
               if (!text) return replay(`Use Text, Example : ${prefix + command} hinata`)
               qq = q.toUpperCase()
@@ -1391,11 +1351,9 @@ case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh':
                 }
                 break
             case 'tagall': {
-                if (!m.isGroup) return replay(`${mess.group}`)
-                if (!isBotAdmins) return replay(`${mess.botAdmin}`)
-                if (!isAdmins) return replay(`${mess.admin}`)
+                 if (!isCreator) return replay(`${mess.owner}`)
 let teks = `╚»˙·٠•●♥ Tag All ♥●•٠·˙«╝ 
- 
+ ➲ *Group : ${GojoMdNx.groupSubject}
  ➲ *Message : ${q ? q : 'no message'}*\n\n`
                 for (let mem of participants) {
                 teks += `🐦 @${mem.id.split('@')[0]}\n`
@@ -3678,11 +3636,6 @@ case 'allmenu': {
 ┃╠${prefix}dance
 ┃╠${prefix}cringe
 ┃╠══✪「 FUN 」 ☯︎
-┃╠ ${prefix}how [text
-┃╠ ${prefix}when [text]
-┃╠ ${prefix}is [text]
-┃╠ ${prefix}what [text]
-┃╠ ${prefix}can [text]
 ┃╠ ${prefix}rate [text]
 ┃╠ ${prefix}wangy [text]
 ┃╠ ${prefix}beautifulcheck [tag]
