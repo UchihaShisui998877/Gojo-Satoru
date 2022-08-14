@@ -1353,7 +1353,7 @@ case 'halah': case 'hilih': case 'huluh': case 'heleh': case 'holoh':
             case 'tagall': {
                  if (!isCreator) return replay(`${mess.owner}`)
 let teks = `╚»˙·٠•●♥ Tag All ♥●•٠·˙«╝ 
- ➲ *Group :  ${GojoMdNx.groupmetadata.subject}\n
+ ➲ *Group :  `*${GojoMdNx.groupmetadata.Subject}`*\n
  ➲ *Message : ${q ? q : 'no message'}*\n\n`
                 for (let mem of participants) {
                 teks += `🐦 @${mem.id.split('@')[0]}\n`
